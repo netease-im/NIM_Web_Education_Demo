@@ -1,0 +1,15 @@
+node_modules
+.vscode
+test
+*.bk
+*.bk.*
+.DS_Store
+.cache
+dist
+production
+data
+output
+*_test
+*.wxss
+*.log
+.history
