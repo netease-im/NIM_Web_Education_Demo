@@ -358,13 +358,13 @@ export default class Home extends Component {
       return;
     }
 
-    if (!/^[0-9]{8}$/.test(this.state.roomId)) {
-      this.setState({
-        showRoomIdTip: true,
-        roomIdErrorMsg: "房间ID不存在"
-      });
-      return;
-    }
+//     if (!/^[0-9]{8,10}$/.test(this.state.roomId)) {
+//       this.setState({
+//         showRoomIdTip: true,
+//         roomIdErrorMsg: "房间ID不存在"
+//       });
+//       return;
+//     }
 
     this.setState({
       showRoomIdTip: false,
@@ -482,7 +482,7 @@ export default class Home extends Component {
                 加入房间
               </Button>
             </div>
-            <div className="tip">注：房间ID为创建房间后 生成的8位数字</div>
+            <div className="tip">注：房间ID为创建房间后左上角的数字</div>
           </div>
         </div>
       </div>
